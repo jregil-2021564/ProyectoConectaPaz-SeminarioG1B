@@ -436,3 +436,4 @@
     requestAnimationFrame(() => initialPanel.classList.add('panel--visible'));
   }
 })();
+ 
