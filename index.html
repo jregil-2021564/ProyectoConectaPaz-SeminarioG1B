@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta Paz — Prevención de la violencia y protección de los derechos humanos</title>
+  <meta name="description" content="Conecta Paz es un sitio educativo del Centro Educativo Técnico Laboral Kinal para aprender a identificar, prevenir y actuar ante situaciones de violencia.">
+  <meta name="theme-color" content="#35507A">
+
+  <!-- Open Graph (para compartir en redes sociales) -->
+  <meta property="og:title" content="Conecta Paz — Prevención de la violencia">
+  <meta property="og:description" content="Sitio educativo para aprender a identificar, prevenir y actuar ante situaciones de violencia. Centro Educativo Técnico Laboral Kinal.">
+  <meta property="og:type" content="website">
+  <!-- Reemplace con la URL real cuando publique el sitio: -->
+  <!-- <meta property="og:url" content="https://su-dominio.com"> -->
+  <!-- <meta property="og:image" content="https://su-dominio.com/assets/img/hero-conecta-paz.png"> -->
+
+  <!-- Favicon: reemplace con su propio ícono en assets/img/favicon.png -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <noscript>
+    <style>
+      .panel { opacity: 1; transform: none; }
+      .panel[hidden] { display: none; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <p class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Conecta Paz</span>
+      </p>
+
+      <nav class="tabs" aria-label="Secciones del sitio">
+        <div class="tabs__scroll" role="tablist" aria-label="Secciones del sitio">
+          <button class="tab" id="tab-inicio" role="tab" data-tab="inicio" aria-selected="true" aria-controls="panel-inicio" tabindex="0">Inicio</button>
+          <button class="tab" id="tab-tipos" role="tab" data-tab="tipos" aria-selected="false" aria-controls="panel-tipos" tabindex="-1">Tipos de violencia</button>
+          <button class="tab" id="tab-ruta" role="tab" data-tab="ruta" aria-selected="false" aria-controls="panel-ruta" tabindex="-1">Ruta de denuncia</button>
+          <button class="tab" id="tab-prevencion" role="tab" data-tab="prevencion" aria-selected="false" aria-controls="panel-prevencion" tabindex="-1">Prevención</button>
+          <button class="tab" id="tab-casos" role="tab" data-tab="casos" aria-selected="false" aria-controls="panel-casos" tabindex="-1">Casos simulados</button>
+          <button class="tab" id="tab-quiz" role="tab" data-tab="quiz" aria-selected="false" aria-controls="panel-quiz" tabindex="-1">Quiz</button>
+          <button class="tab" id="tab-faq" role="tab" data-tab="faq" aria-selected="false" aria-controls="panel-faq" tabindex="-1">Preguntas frecuentes</button>
+          <button class="tab" id="tab-creditos" role="tab" data-tab="creditos" aria-selected="false" aria-controls="panel-creditos" tabindex="-1">Créditos</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section id="panel-inicio" class="panel" role="tabpanel" aria-labelledby="tab-inicio" data-section="inicio" tabindex="0">
+
+      <div class="hero">
+        <div class="hero__text">
+          <p class="hero__badge">Grupo 1 · Sección B · Seminario</p>
+          <h1 class="hero__title">
+            Conecta <span class="hero__accent">Paz</span>
+          </h1>
+          <p class="hero__subtitle">Prevención de la violencia y protección de los derechos humanos</p>
+          <p class="hero__institution">Centro Educativo Técnico Laboral Kinal</p>
+
+          <div class="hero__actions">
+            <button class="hero__btn hero__btn--tipos" data-goto="tipos">
+              <svg class="hero__btn-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Identificar violencia
+            </button>
+            <button class="hero__btn hero__btn--ruta" data-goto="ruta">
+              <svg class="hero__btn-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              Ruta de denuncia
+            </button>
+            <button class="hero__btn hero__btn--prevencion" data-goto="prevencion">
+              <svg class="hero__btn-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Prevención
+            </button>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <!-- Imagen editable: reemplace este archivo con la imagen de portada deseada -->
+          <img src="assets/img/hero-conecta-paz.png"
+               alt="Ilustración de jóvenes promoviendo la convivencia pacífica"
+               class="hero__img"
+               loading="eager">
+          <!-- Forma decorativa detrás de la imagen -->
+          <div class="hero__shape" aria-hidden="true"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="panel-tipos" class="panel" role="tabpanel" aria-labelledby="tab-tipos" data-section="tipos" hidden tabindex="0">
+      <h2>Tipos de violencia</h2>
+      <img src="assets/img/tipos-violencia.png"
+           alt="Íconos representando los seis tipos de violencia: física, verbal, psicológica, escolar, discriminación y digital"
+           class="section-img"
+           loading="lazy">
+      <p class="tipos__intro">Conocer los tipos de violencia es el primer paso para prevenirla. Haga clic en cada tarjeta para ver la definición y las señales que ayudan a identificarla.</p>
+
+      <div class="cards-grid">
+
+        <!-- 1. Violencia física -->
+        <div class="flip-card" data-card="fisica" tabindex="0" role="button" aria-label="Violencia física — haga clic para ver más información">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <img src="assets/img/card-fisica.png"
+                   alt="Ilustración representando violencia física"
+                   class="flip-card__img"
+                   loading="lazy">
+              <h3 class="flip-card__name">Violencia física</h3>
+            </div>
+            <div class="flip-card__back">
+              <h4 class="flip-card__def-title">¿Qué es?</h4>
+              <p class="flip-card__def">Cualquier acción que cause daño corporal, como golpes, empujones, patadas o agresiones con objetos.</p>
+              <h4 class="flip-card__def-title">Señales</h4>
+              <ul class="flip-card__signals">
+                <li>Marcas, moretones o lesiones sin explicación clara.</li>
+                <li>Miedo evidente al acercarse a ciertas personas.</li>
+                <li>Cambios repentinos en el comportamiento.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Violencia verbal -->
+        <div class="flip-card" data-card="verbal" tabindex="0" role="button" aria-label="Violencia verbal — haga clic para ver más información">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <img src="assets/img/card-verbal.png"
+                   alt="Ilustración representando violencia verbal"
+                   class="flip-card__img"
+                   loading="lazy">
+              <h3 class="flip-card__name">Violencia verbal</h3>
+            </div>
+            <div class="flip-card__back">
+              <h4 class="flip-card__def-title">¿Qué es?</h4>
+              <p class="flip-card__def">Uso de palabras para humillar, insultar, amenazar o menospreciar a otra persona de forma repetida.</p>
+              <h4 class="flip-card__def-title">Señales</h4>
+              <ul class="flip-card__signals">
+                <li>Insultos, apodos ofensivos o burlas constantes.</li>
+                <li>Gritos o amenazas frecuentes.</li>
+                <li>La persona agredida se aísla o baja su rendimiento.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Violencia psicológica -->
+        <div class="flip-card" data-card="psicologica" tabindex="0" role="button" aria-label="Violencia psicológica — haga clic para ver más información">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <img src="assets/img/card-psicologica.png"
+                   alt="Ilustración representando violencia psicológica"
+                   class="flip-card__img"
+                   loading="lazy">
+              <h3 class="flip-card__name">Violencia psicológica</h3>
+            </div>
+            <div class="flip-card__back">
+              <h4 class="flip-card__def-title">¿Qué es?</h4>
+              <p class="flip-card__def">Acciones que dañan la autoestima, la seguridad emocional o el bienestar mental, como manipulación, chantaje o control excesivo.</p>
+              <h4 class="flip-card__def-title">Señales</h4>
+              <ul class="flip-card__signals">
+                <li>Miedo constante a equivocarse o a la reacción de otros.</li>
+                <li>Sentirse culpable sin razón aparente.</li>
+                <li>Aislamiento o pérdida de confianza en sí mismo(a).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Violencia escolar -->
+        <div class="flip-card" data-card="escolar" tabindex="0" role="button" aria-label="Violencia escolar — haga clic para ver más información">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <img src="assets/img/card-escolar.png"
+                   alt="Ilustración representando violencia escolar o bullying"
+                   class="flip-card__img"
+                   loading="lazy">
+              <h3 class="flip-card__name">Violencia escolar</h3>
+            </div>
+            <div class="flip-card__back">
+              <h4 class="flip-card__def-title">¿Qué es?</h4>
+              <p class="flip-card__def">Agresiones físicas, verbales o sociales que ocurren de manera repetida dentro del entorno educativo, también conocido como bullying.</p>
+              <h4 class="flip-card__def-title">Señales</h4>
+              <ul class="flip-card__signals">
+                <li>Rechazo a asistir al colegio o cambios en el rendimiento.</li>
+                <li>Pertenencias dañadas o extraviadas con frecuencia.</li>
+                <li>Comportamiento ansioso o triste sin causa aparente.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Discriminación -->
+        <div class="flip-card" data-card="discriminacion" tabindex="0" role="button" aria-label="Discriminación — haga clic para ver más información">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <img src="assets/img/card-discriminacion.png"
+                   alt="Ilustración representando discriminación y exclusión"
+                   class="flip-card__img"
+                   loading="lazy">
+              <h3 class="flip-card__name">Discriminación</h3>
+            </div>
+            <div class="flip-card__back">
+              <h4 class="flip-card__def-title">¿Qué es?</h4>
+              <p class="flip-card__def">Trato desigual o excluyente hacia una persona por su origen, apariencia, género, cultura, religión, condición social u otra característica personal.</p>
+              <h4 class="flip-card__def-title">Señales</h4>
+              <ul class="flip-card__signals">
+                <li>Exclusión de grupos o actividades por ser "diferente".</li>
+                <li>Comentarios despectivos sobre la identidad de alguien.</li>
+                <li>Negación de oportunidades sin justificación válida.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Violencia digital -->
+        <div class="flip-card" data-card="digital" tabindex="0" role="button" aria-label="Violencia digital — haga clic para ver más información">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <img src="assets/img/card-digital.png"
+                   alt="Ilustración representando violencia y acoso digital"
+                   class="flip-card__img"
+                   loading="lazy">
+              <h3 class="flip-card__name">Violencia digital</h3>
+            </div>
+            <div class="flip-card__back">
+              <h4 class="flip-card__def-title">¿Qué es?</h4>
+              <p class="flip-card__def">Agresiones, acoso o intimidación que ocurren a través de redes sociales, mensajes, correos o cualquier medio digital.</p>
+              <h4 class="flip-card__def-title">Señales</h4>
+              <ul class="flip-card__signals">
+                <li>Mensajes amenazantes, humillantes o de acoso en línea.</li>
+                <li>Difusión de imágenes o información privada sin consentimiento.</li>
+                <li>Ansiedad o temor al usar el teléfono o redes sociales.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="panel-ruta" class="panel" role="tabpanel" aria-labelledby="tab-ruta" data-section="ruta" hidden tabindex="0">
+      <h2>Ruta de denuncia</h2>
+      <img src="assets/img/ruta-denuncia.png"
+           alt="Ilustración de un camino con cinco paradas que representan los pasos de la ruta de denuncia"
+           class="section-img"
+           loading="lazy">
+      <p class="ruta__intro">Cuando una situación de violencia no se resuelve, se puede avanzar al siguiente paso. Solo se escala si el paso anterior no brindó una solución.</p>
+
+      <!-- Regla de escalamiento -->
+      <div class="ruta__regla" aria-label="Regla importante">
+        <svg class="ruta__regla-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <p class="ruta__regla-text"><strong>Regla principal:</strong> solo se avanza al siguiente paso si el caso no se resuelve en el paso anterior.</p>
+      </div>
+
+      <!-- Mapa de ruta -->
+      <div class="ruta__mapa" role="list" aria-label="Pasos de la ruta de denuncia">
+
+        <!-- Paso 1 -->
+        <div class="ruta__paso" role="listitem" data-paso="1" tabindex="0">
+          <div class="ruta__paso-marker">
+            <span class="ruta__paso-num" aria-hidden="true">1</span>
+            <svg class="ruta__paso-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="ruta__paso-content">
+            <h3 class="ruta__paso-title">Casa y docente</h3>
+            <p class="ruta__paso-summary">Comunique la situación a su familia y a un docente de confianza.</p>
+            <div class="ruta__paso-detail" hidden>
+              <p>El primer paso siempre es hablar. Busque a un adulto de confianza en su hogar y a un docente que pueda escucharle y orientarle dentro del centro educativo. No enfrente la situación solo(a).</p>
+            </div>
+          </div>
+          <button class="ruta__paso-toggle" aria-expanded="false" aria-label="Ver más sobre este paso">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+
+        <!-- Conector -->
+        <div class="ruta__conector" aria-hidden="true"><div class="ruta__linea"></div></div>
+
+        <!-- Paso 2 -->
+        <div class="ruta__paso" role="listitem" data-paso="2" tabindex="0">
+          <div class="ruta__paso-marker">
+            <span class="ruta__paso-num" aria-hidden="true">2</span>
+            <svg class="ruta__paso-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+          </div>
+          <div class="ruta__paso-content">
+            <h3 class="ruta__paso-title">Coordinador</h3>
+            <p class="ruta__paso-summary">Si el problema no se resuelve, acuda al coordinador correspondiente.</p>
+            <div class="ruta__paso-detail" hidden>
+              <p>El coordinador tiene la responsabilidad de mediar y buscar soluciones dentro de la organización del centro educativo. Explique los pasos que ya dio y por qué siente que no se resolvió.</p>
+            </div>
+          </div>
+          <button class="ruta__paso-toggle" aria-expanded="false" aria-label="Ver más sobre este paso">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+
+        <!-- Conector -->
+        <div class="ruta__conector" aria-hidden="true"><div class="ruta__linea"></div></div>
+
+        <!-- Paso 3 -->
+        <div class="ruta__paso" role="listitem" data-paso="3" tabindex="0">
+          <div class="ruta__paso-marker">
+            <span class="ruta__paso-num" aria-hidden="true">3</span>
+            <svg class="ruta__paso-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="ruta__paso-content">
+            <h3 class="ruta__paso-title">Directivos</h3>
+            <p class="ruta__paso-summary">Si continúa sin solución, escale el caso a los directivos del establecimiento.</p>
+            <div class="ruta__paso-detail" hidden>
+              <p>Los directivos del centro educativo tienen la autoridad para tomar decisiones institucionales. Si los pasos anteriores no fueron suficientes, ellos pueden intervenir de manera formal para resolver la situación.</p>
+            </div>
+          </div>
+          <button class="ruta__paso-toggle" aria-expanded="false" aria-label="Ver más sobre este paso">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+
+        <!-- Conector -->
+        <div class="ruta__conector" aria-hidden="true"><div class="ruta__linea"></div></div>
+
+        <!-- Paso 4 -->
+        <div class="ruta__paso" role="listitem" data-paso="4" tabindex="0">
+          <div class="ruta__paso-marker">
+            <span class="ruta__paso-num" aria-hidden="true">4</span>
+            <svg class="ruta__paso-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="ruta__paso-content">
+            <h3 class="ruta__paso-title">Ministerio de Educación</h3>
+            <p class="ruta__paso-summary">Si la institución no brinda una solución adecuada, acuda al Ministerio de Educación.</p>
+            <div class="ruta__paso-detail" hidden>
+              <p>El Ministerio de Educación supervisa a los centros educativos y puede intervenir cuando las vías internas se han agotado. Este paso es importante cuando la institución no ha respondido de forma adecuada.</p>
+            </div>
+          </div>
+          <button class="ruta__paso-toggle" aria-expanded="false" aria-label="Ver más sobre este paso">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+
+        <!-- Conector -->
+        <div class="ruta__conector" aria-hidden="true"><div class="ruta__linea"></div></div>
+
+        <!-- Paso 5 -->
+        <div class="ruta__paso" role="listitem" data-paso="5" tabindex="0">
+          <div class="ruta__paso-marker">
+            <span class="ruta__paso-num" aria-hidden="true">5</span>
+            <svg class="ruta__paso-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="ruta__paso-content">
+            <h3 class="ruta__paso-title">Ministerio Público</h3>
+            <p class="ruta__paso-summary">Último recurso, especialmente cuando el caso lo amerite y no se haya resuelto por las vías anteriores.</p>
+            <div class="ruta__paso-detail" hidden>
+              <p>El Ministerio Público interviene en situaciones que pueden constituir un delito. Es el último escalón de la ruta y se acude a él cuando todas las instancias anteriores han sido insuficientes o cuando la gravedad del caso lo requiere.</p>
+            </div>
+          </div>
+          <button class="ruta__paso-toggle" aria-expanded="false" aria-label="Ver más sobre este paso">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Advertencia de peligro inmediato -->
+      <div class="ruta__alerta" role="alert">
+        <svg class="ruta__alerta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <p class="ruta__alerta-text">Si existe peligro inmediato, agresión grave o una amenaza directa, busque ayuda de un adulto responsable o autoridad competente de inmediato. No espere a seguir la ruta paso a paso.</p>
+      </div>
+
+    </section>
+
+    <section id="panel-prevencion" class="panel" role="tabpanel" aria-labelledby="tab-prevencion" data-section="prevencion" hidden tabindex="0">
+      <h2>Prevención</h2>
+      <img src="assets/img/prevencion.png"
+           alt="Ilustración de estudiantes dialogando respetuosamente en un aula"
+           class="section-img"
+           loading="lazy">
+
+      <!-- Bloque 1: Intro -->
+      <div class="prev__bloque prev__intro-bloque">
+        <div class="prev__intro-icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3 class="prev__bloque-title">Prevenir empieza en acciones pequeñas</h3>
+          <p class="prev__text">La violencia no siempre comienza con un golpe. A veces empieza con un comentario, una exclusión o un silencio cómplice. Cada acción de respeto, diálogo y empatía que usted practique contribuye a construir un entorno más seguro para todos.</p>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Antes de reaccionar, piense -->
+      <div class="prev__bloque prev__pensar">
+        <h3 class="prev__bloque-title">Antes de reaccionar, piense</h3>
+        <p class="prev__text">Cuando una situación le genera enojo o frustración, tómese un momento antes de actuar. Estas preguntas pueden ayudarle:</p>
+        <div class="prev__preguntas">
+          <div class="prev__pregunta">
+            <span class="prev__pregunta-icon" aria-hidden="true">1</span>
+            <p>¿Lo que voy a decir o hacer puede lastimar a alguien?</p>
+          </div>
+          <div class="prev__pregunta">
+            <span class="prev__pregunta-icon" aria-hidden="true">2</span>
+            <p>¿Estoy reaccionando por impulso o con calma?</p>
+          </div>
+          <div class="prev__pregunta">
+            <span class="prev__pregunta-icon" aria-hidden="true">3</span>
+            <p>¿Existe otra forma de resolver esta situación sin agresión?</p>
+          </div>
+          <div class="prev__pregunta">
+            <span class="prev__pregunta-icon" aria-hidden="true">4</span>
+            <p>¿Necesito pedir ayuda a un adulto de confianza?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Haga esto / Evite esto -->
+      <div class="prev__bloque">
+        <h3 class="prev__bloque-title">Consejos para la convivencia</h3>
+        <div class="prev__consejos">
+          <div class="prev__columna prev__columna--haga">
+            <h4 class="prev__columna-titulo">
+              <svg class="prev__columna-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Haga esto
+            </h4>
+            <ul class="prev__lista">
+              <li>Escuche con respeto antes de responder.</li>
+              <li>Use un tono calmado para expresar desacuerdos.</li>
+              <li>Incluya a quienes ve solos o apartados.</li>
+              <li>Reconozca las diferencias como algo valioso.</li>
+              <li>Busque ayuda de un adulto cuando sea necesario.</li>
+            </ul>
+          </div>
+          <div class="prev__columna prev__columna--evite">
+            <h4 class="prev__columna-titulo">
+              <svg class="prev__columna-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Evite esto
+            </h4>
+            <ul class="prev__lista">
+              <li>Usar apodos ofensivos, aunque parezcan "broma".</li>
+              <li>Compartir información privada de otros sin permiso.</li>
+              <li>Reírse o participar cuando alguien es humillado.</li>
+              <li>Ignorar a un compañero que pide ayuda.</li>
+              <li>Resolver conflictos con gritos o agresiones.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Cómo apoyar a un compañero -->
+      <div class="prev__bloque prev__apoyar">
+        <h3 class="prev__bloque-title">Cómo apoyar a un compañero que sufre violencia</h3>
+        <p class="prev__text">Si nota que alguien a su alrededor está pasando por una situación difícil, su apoyo puede marcar la diferencia.</p>
+        <div class="prev__apoyar-pasos">
+          <div class="prev__apoyar-paso">
+            <div class="prev__apoyar-icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <p><strong>Escuche sin juzgar.</strong> Permita que la persona se exprese con confianza. No minimice lo que siente.</p>
+          </div>
+          <div class="prev__apoyar-paso">
+            <div class="prev__apoyar-icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <p><strong>Acompañe.</strong> Ofrezca estar presente cuando hable con un docente o adulto de confianza.</p>
+          </div>
+          <div class="prev__apoyar-paso">
+            <div class="prev__apoyar-icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+            </div>
+            <p><strong>No guarde silencio.</strong> Si ve una situación grave, comuníquelo a un adulto responsable. Hablar no es traicionar, es proteger.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque 5: No ser cómplice -->
+      <div class="prev__bloque prev__complice">
+        <div class="prev__complice-inner">
+          <h3 class="prev__bloque-title">No ser cómplice también es prevenir</h3>
+          <p class="prev__text">El silencio frente a la violencia la sostiene. Reírse de una agresión, compartir un contenido humillante o simplemente mirar hacia otro lado son formas de complicidad. Usted tiene el poder de romper ese ciclo.</p>
+          <p class="prev__frase-reflexiva">"La indiferencia ante la injusticia es la peor forma de participar en ella."</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="panel-casos" class="panel" role="tabpanel" aria-labelledby="tab-casos" data-section="casos" hidden tabindex="0">
+      <h2>Casos simulados</h2>
+      <img src="assets/img/casos-simulados.png"
+           alt="Ilustración de un estudiante reflexionando sobre situaciones de violencia"
+           class="section-img"
+           loading="lazy">
+      <p class="casos__intro">Estos ejemplos simulados le ayudarán a comprender cómo identificar el tipo de violencia y cuál es el primer paso recomendado. Haga clic en cada caso para ver la orientación.</p>
+
+      <div class="casos__grid">
+
+        <!-- Caso 1 -->
+        <article class="caso" tabindex="0">
+          <div class="caso__header">
+            <span class="caso__numero" aria-hidden="true">1</span>
+            <h3 class="caso__frase">"Me insultan todos los días."</h3>
+            <button class="caso__toggle" aria-expanded="false" aria-label="Ver orientación de este caso">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="caso__body" hidden>
+            <div class="caso__dato">
+              <span class="caso__etiqueta">Posible tipo de violencia:</span>
+              <span class="caso__valor caso__valor--verbal">Violencia verbal</span>
+            </div>
+            <div class="caso__dato">
+              <span class="caso__etiqueta">Primer paso sugerido:</span>
+              <span class="caso__valor">Comunicar la situación en casa y con un docente de confianza.</span>
+            </div>
+            <div class="caso__recordatorio">
+              <svg class="caso__recordatorio-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <p>Recuerde: solo se avanza al siguiente paso de la ruta si la situación no se resuelve en el paso actual.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Caso 2 -->
+        <article class="caso" tabindex="0">
+          <div class="caso__header">
+            <span class="caso__numero" aria-hidden="true">2</span>
+            <h3 class="caso__frase">"Me amenazan por redes sociales."</h3>
+            <button class="caso__toggle" aria-expanded="false" aria-label="Ver orientación de este caso">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="caso__body" hidden>
+            <div class="caso__dato">
+              <span class="caso__etiqueta">Posible tipo de violencia:</span>
+              <span class="caso__valor caso__valor--digital">Violencia digital</span>
+            </div>
+            <div class="caso__dato">
+              <span class="caso__etiqueta">Primer paso sugerido:</span>
+              <span class="caso__valor">Comunicar la situación en casa y con un docente de confianza. Guardar capturas de pantalla como evidencia.</span>
+            </div>
+            <div class="caso__recordatorio">
+              <svg class="caso__recordatorio-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <p>Recuerde: solo se avanza al siguiente paso de la ruta si la situación no se resuelve en el paso actual.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Caso 3 -->
+        <article class="caso" tabindex="0">
+          <div class="caso__header">
+            <span class="caso__numero" aria-hidden="true">3</span>
+            <h3 class="caso__frase">"Me golpearon dentro del colegio."</h3>
+            <button class="caso__toggle" aria-expanded="false" aria-label="Ver orientación de este caso">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="caso__body" hidden>
+            <div class="caso__dato">
+              <span class="caso__etiqueta">Posible tipo de violencia:</span>
+              <span class="caso__valor caso__valor--fisica">Violencia física / Violencia escolar</span>
+            </div>
+            <div class="caso__dato">
+              <span class="caso__etiqueta">Primer paso sugerido:</span>
+              <span class="caso__valor">Comunicar de inmediato a un docente o adulto responsable dentro del colegio, y también en casa. Si hay lesiones, buscar atención médica.</span>
+            </div>
+            <div class="caso__recordatorio caso__recordatorio--urgente">
+              <svg class="caso__recordatorio-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <p>Si existe peligro inmediato o agresión grave, busque ayuda de un adulto responsable o autoridad competente de inmediato.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Caso 4 -->
+        <article class="caso" tabindex="0">
+          <div class="caso__header">
+            <span class="caso__numero" aria-hidden="true">4</span>
+            <h3 class="caso__frase">"Me excluyen o se burlan de mí constantemente."</h3>
+            <button class="caso__toggle" aria-expanded="false" aria-label="Ver orientación de este caso">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+          <div class="caso__body" hidden>
+            <div class="caso__dato">
+              <span class="caso__etiqueta">Posible tipo de violencia:</span>
+              <span class="caso__valor caso__valor--escolar">Violencia escolar / Discriminación</span>
+            </div>
+            <div class="caso__dato">
+              <span class="caso__etiqueta">Primer paso sugerido:</span>
+              <span class="caso__valor">Comunicar la situación en casa y con un docente de confianza. Describir lo que ocurre con la mayor claridad posible.</span>
+            </div>
+            <div class="caso__recordatorio">
+              <svg class="caso__recordatorio-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <p>Recuerde: solo se avanza al siguiente paso de la ruta si la situación no se resuelve en el paso actual.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="panel-quiz" class="panel" role="tabpanel" aria-labelledby="tab-quiz" data-section="quiz" hidden tabindex="0">
+      <h2>Quiz</h2>
+      <img src="assets/img/quiz.png"
+           alt="Ilustración de una pantalla mostrando un quiz interactivo con opciones de respuesta"
+           class="section-img"
+           loading="lazy">
+      <p class="quiz__intro">Ponga a prueba lo que aprendió. Este quiz es solo para reflexión — no se recopilan datos ni se guarda ningún resultado.</p>
+
+      <div class="quiz__container" id="quiz-container">
+
+        <!-- Pregunta 1 -->
+        <div class="quiz__pregunta" data-quiz="1" data-correcta="b">
+          <p class="quiz__enunciado"><span class="quiz__num">1 / 5</span> ¿Qué es la violencia verbal?</p>
+          <div class="quiz__opciones" role="radiogroup" aria-label="Opciones de la pregunta 1">
+            <button class="quiz__opcion" data-valor="a">Cualquier agresión que cause daño corporal.</button>
+            <button class="quiz__opcion" data-valor="b">Uso de palabras para humillar, insultar o amenazar de forma repetida.</button>
+            <button class="quiz__opcion" data-valor="c">Exclusión de una persona por su apariencia o cultura.</button>
+          </div>
+          <p class="quiz__feedback" hidden></p>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="quiz__pregunta" data-quiz="2" data-correcta="c">
+          <p class="quiz__enunciado"><span class="quiz__num">2 / 5</span> Si sufre violencia en el colegio, ¿cuál es el primer paso recomendado?</p>
+          <div class="quiz__opciones" role="radiogroup" aria-label="Opciones de la pregunta 2">
+            <button class="quiz__opcion" data-valor="a">Ir directamente al Ministerio Público.</button>
+            <button class="quiz__opcion" data-valor="b">Publicar lo sucedido en redes sociales.</button>
+            <button class="quiz__opcion" data-valor="c">Comunicar la situación en casa y con un docente de confianza.</button>
+          </div>
+          <p class="quiz__feedback" hidden></p>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="quiz__pregunta" data-quiz="3" data-correcta="a">
+          <p class="quiz__enunciado"><span class="quiz__num">3 / 5</span> ¿Cuándo se debe avanzar al siguiente paso de la ruta de denuncia?</p>
+          <div class="quiz__opciones" role="radiogroup" aria-label="Opciones de la pregunta 3">
+            <button class="quiz__opcion" data-valor="a">Solo cuando el paso anterior no brindó una solución.</button>
+            <button class="quiz__opcion" data-valor="b">Siempre se debe llegar al último paso para asegurarse.</button>
+            <button class="quiz__opcion" data-valor="c">Cuando uno quiera, sin importar si ya se resolvió.</button>
+          </div>
+          <p class="quiz__feedback" hidden></p>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="quiz__pregunta" data-quiz="4" data-correcta="b">
+          <p class="quiz__enunciado"><span class="quiz__num">4 / 5</span> Si un compañero le cuenta que está siendo víctima de violencia, ¿qué debería hacer?</p>
+          <div class="quiz__opciones" role="radiogroup" aria-label="Opciones de la pregunta 4">
+            <button class="quiz__opcion" data-valor="a">Decirle que no es grave y que lo ignore.</button>
+            <button class="quiz__opcion" data-valor="b">Escucharle sin juzgar y acompañarle a hablar con un adulto de confianza.</button>
+            <button class="quiz__opcion" data-valor="c">Enfrentar al agresor directamente.</button>
+          </div>
+          <p class="quiz__feedback" hidden></p>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="quiz__pregunta" data-quiz="5" data-correcta="c">
+          <p class="quiz__enunciado"><span class="quiz__num">5 / 5</span> ¿Por qué "no ser cómplice" es una forma de prevenir la violencia?</p>
+          <div class="quiz__opciones" role="radiogroup" aria-label="Opciones de la pregunta 5">
+            <button class="quiz__opcion" data-valor="a">Porque así evito que me culpen a mí.</button>
+            <button class="quiz__opcion" data-valor="b">Porque el silencio no tiene ningún efecto.</button>
+            <button class="quiz__opcion" data-valor="c">Porque el silencio frente a la violencia la sostiene, y hablar puede romper ese ciclo.</button>
+          </div>
+          <p class="quiz__feedback" hidden></p>
+        </div>
+
+      </div>
+
+      <!-- Resultado final -->
+      <div class="quiz__resultado" id="quiz-resultado" hidden>
+        <div class="quiz__resultado-inner">
+          <p class="quiz__puntaje"></p>
+          <p class="quiz__mensaje"></p>
+          <button class="quiz__reiniciar" id="quiz-reiniciar">Intentar de nuevo</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="panel-faq" class="panel" role="tabpanel" aria-labelledby="tab-faq" data-section="faq" hidden tabindex="0">
+      <h2>Preguntas frecuentes</h2>
+      <p class="faq__intro">Respuestas a las dudas más comunes sobre violencia, prevención y la ruta de denuncia.</p>
+
+      <div class="faq__lista">
+
+        <details class="faq__item">
+          <summary class="faq__pregunta">¿Este sitio recibe denuncias o datos personales?</summary>
+          <div class="faq__respuesta">
+            <p>No. Conecta Paz es un sitio educativo que orienta e informa. No recibe denuncias, no recopila datos personales y no reemplaza a ninguna autoridad educativa o legal.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__pregunta">¿Qué hago si estoy en peligro inmediato?</summary>
+          <div class="faq__respuesta">
+            <p>Si existe peligro inmediato, agresión grave o una amenaza directa, busque ayuda de un adulto responsable o autoridad competente de inmediato. No espere a seguir la ruta de denuncia paso a paso.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__pregunta">¿Puedo saltar pasos en la ruta de denuncia?</summary>
+          <div class="faq__respuesta">
+            <p>La ruta está diseñada para escalar gradualmente. Solo se avanza al siguiente paso si el anterior no brindó una solución. Sin embargo, en situaciones de peligro grave, se puede acudir directamente a la autoridad competente.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__pregunta">¿Qué tipos de violencia existen?</summary>
+          <div class="faq__respuesta">
+            <p>En este sitio se presentan seis tipos: violencia física, verbal, psicológica, escolar, discriminación y violencia digital. Puede conocer la definición y las señales de cada una en la sección "Tipos de violencia".</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__pregunta">¿Reírme de una broma sobre alguien es violencia?</summary>
+          <div class="faq__respuesta">
+            <p>Puede serlo. Si la "broma" humilla, excluye o lastima a alguien de forma repetida, se convierte en violencia verbal o escolar. Reírse o compartir ese tipo de contenido es una forma de complicidad que sostiene la agresión.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__pregunta">¿Denunciar es traicionar a un compañero?</summary>
+          <div class="faq__respuesta">
+            <p>No. Comunicar una situación de violencia a un adulto de confianza no es traicionar: es proteger. Guardar silencio puede permitir que la situación empeore.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__pregunta">¿Quién hizo este sitio?</summary>
+          <div class="faq__respuesta">
+            <p>Conecta Paz fue creado por el Grupo 1, Sección B, del curso de Seminario del Centro Educativo Técnico Laboral Kinal. Puede ver los créditos completos en la sección "Créditos".</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+    <section id="panel-creditos" class="panel" role="tabpanel" aria-labelledby="tab-creditos" data-section="creditos" hidden tabindex="0">
+      <h2>Créditos</h2>
+
+      <div class="creditos__contenido">
+        <div class="creditos__bloque creditos__proyecto">
+          <h3 class="creditos__subtitulo">Proyecto</h3>
+          <p class="creditos__nombre-proyecto">Conecta Paz</p>
+          <p class="creditos__desc">Sitio web educativo para la prevención de la violencia y la protección de los derechos humanos.</p>
+        </div>
+
+        <div class="creditos__bloque">
+          <h3 class="creditos__subtitulo">Institución</h3>
+          <p>Centro Educativo Técnico Laboral Kinal</p>
+        </div>
+
+        <div class="creditos__bloque">
+          <h3 class="creditos__subtitulo">Curso</h3>
+          <p>Seminario — Grupo 1, Sección B</p>
+        </div>
+
+        <div class="creditos__bloque">
+          <h3 class="creditos__subtitulo">Año</h3>
+          <p>2026</p>
+        </div>
+
+        <div class="creditos__bloque creditos__equipo">
+          <h3 class="creditos__subtitulo">Equipo</h3>
+          <p class="creditos__nota">Los nombres de los integrantes del grupo se agregarán aquí.</p>
+          <!-- 
+            Para agregar integrantes, copie y pegue este bloque
+            por cada persona:
+            
+            <div class="creditos__miembro">
+              <p class="creditos__miembro-nombre">Nombre del integrante</p>
+              <p class="creditos__miembro-rol">Rol o contribución</p>
+            </div>
+          -->
+        </div>
+
+        <div class="creditos__bloque">
+          <h3 class="creditos__subtitulo">Tecnología</h3>
+          <p>Sitio 100% estático construido con HTML5, CSS3 y JavaScript vanilla. Sin frameworks, sin backend, sin base de datos.</p>
+        </div>
+
+        <div class="creditos__bloque creditos__aviso">
+          <h3 class="creditos__subtitulo">Aviso importante</h3>
+          <p>Este sitio orienta e informa. No recibe denuncias, no recopila datos personales y no reemplaza a ninguna autoridad educativa o legal.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Botón flotante "¿Necesita ayuda?" -->
+  <button class="ayuda-btn" id="ayuda-btn" aria-label="¿Necesita ayuda? Abrir orientación">
+    <svg class="ayuda-btn__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    <span class="ayuda-btn__text">¿Necesita ayuda?</span>
+  </button>
+
+  <!-- Modal de orientación -->
+  <div class="modal-overlay" id="modal-ayuda" role="dialog" aria-modal="true" aria-labelledby="modal-ayuda-titulo" hidden>
+    <div class="modal">
+      <div class="modal__header">
+        <h3 class="modal__titulo" id="modal-ayuda-titulo">¿Necesita orientación?</h3>
+        <button class="modal__cerrar" id="modal-cerrar" aria-label="Cerrar">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal__body">
+        <p class="modal__texto">Este sitio es educativo y no recibe denuncias ni datos personales. Si necesita ayuda, estas son algunas orientaciones:</p>
+
+        <div class="modal__opcion">
+          <div class="modal__opcion-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <h4 class="modal__opcion-titulo">Hable con un adulto de confianza</h4>
+            <p class="modal__opcion-desc">Un familiar, docente o persona de confianza puede escucharle y orientarle como primer paso.</p>
+          </div>
+        </div>
+
+        <div class="modal__opcion">
+          <div class="modal__opcion-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <div>
+            <h4 class="modal__opcion-titulo">Siga la ruta de denuncia</h4>
+            <p class="modal__opcion-desc">Revise la sección "Ruta de denuncia" de este sitio para conocer los pasos escalonados que puede seguir.</p>
+          </div>
+        </div>
+
+        <div class="modal__opcion">
+          <div class="modal__opcion-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div>
+            <h4 class="modal__opcion-titulo">Si hay peligro inmediato</h4>
+            <p class="modal__opcion-desc">Busque ayuda de un adulto responsable o autoridad competente de inmediato. No espere a seguir la ruta paso a paso.</p>
+          </div>
+        </div>
+
+        <button class="modal__ir-ruta" data-goto="ruta" id="modal-ir-ruta">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          Ir a la Ruta de denuncia
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
